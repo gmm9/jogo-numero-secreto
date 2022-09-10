@@ -21,10 +21,12 @@ function onSpeak(e) {
     else {
         document.body.innerHTML = `
         <h2>Você Errou!</h2>
+        <h2>GAME OVER</h2>
         <h3>O número secreto era ${numeroSecreto}</h3>
         
         <button id="jogar-novamente" class="btn-jogar">Jogar Novamente</button>
         `
+        document.body.style.background = 'red';
     }
   } else {
     console.log("Voz não liberada");
